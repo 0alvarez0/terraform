@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "tfbucket1" {
   bucket = var.bucketname
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_versioning" "tfbucket1vers" {
